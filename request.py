@@ -21,3 +21,11 @@ class SignUpRequest(BaseModel):
 class LoginRequest(BaseModel):
     email: EmailStr
     password: str
+
+
+class HealthProfileCreateRequest(BaseModel):
+    age: int
+    height_cm: float
+    weight_kg: float
+    smoking: bool
+    exercise_per_week: int
